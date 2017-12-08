@@ -5,8 +5,7 @@
 		<link rel="stylesheet" type="text/css" href="css/list.css">
 		<link rel="stylesheet" type="text/css" href="css/panel.css">
 	</head>
-
-<body>
+<div class="wrapper">
  	<div class="list">
     	<div class="add_user">
     		<input type="button" value="+" class="add_user_button">
@@ -15,22 +14,25 @@
 	</div>
 
 	<div class="conteiner">
-	  	<div class="panel">
+	  	<form class="panel">
 	    	<img src="#">
 	    	<div class="procent"><p>Filled profile: 20%</p></div>
-	   		<input type="text" class="first_name" value="First name">
-	   		<input type="text" class="second_name" value="Second name">
+	   		<input type="text" class="first_name" value="First name" required>
+	   		<input type="text" class="second_name" value="Second name" required>
 	    	<input type="text" class="some_text" value="some text">
 	    	<input type="text" class="skils" value="Skils">
-	    	<select suze="2" class="gender">
-	      		<option>Select Gender</option>
-	      		<option>Man</option>
-	      		<option>Feman</option>
-	    	</select>
-	    	<input type="date" class="date">
-	    	<input type="text" class="comm" value="Comments">
+	    	<input list="gender_list" class="gender">
+	    	<datalist id="gender_list">
+	      		<option value="Man"></option>
+	      		<option value="Feman"></option>
+	    	</datalist>
+	    	<input type="date" class="birthday" required>
+	    	<textarea class="comm" value="Comments"></textarea>
 	    	<input type="button" class="save" value="Save">
 	    	<input type="button" class="close" value="X">
-	  	</div>
+	  	</form>
 	</div>
-</body>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/script.js"></script>
+</html>
