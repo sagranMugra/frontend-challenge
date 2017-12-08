@@ -1,0 +1,71 @@
+
+.panel {
+  display: grid;
+  grid-template-columns: 100px 1fr 1fr 1fr 1fr 30px;
+  grid-template-rows: 30px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px;
+  grid-gap: 12.5px;
+  padding: 0;
+  margin: 0;
+}
+
+.panel img {
+  border: 1px solid;
+  grid-area: 2 / 1 / 5 / 2;
+}
+
+.first_name {
+    grid-area: 2 / 2 / 3 / 4;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 0 0 0 10px;
+}
+
+.second_name {
+  grid-area: 2 / 4 / 3 / 6;
+  border-radius: 5px;
+  padding: 0 0 0 10px;
+}
+
+.some_text {
+  grid-area: 3 / 2 / 4 / 6;
+  border-radius: 5px;
+  padding: 0 0 0 10px;
+}
+
+.skils {
+  grid-area: 4 / 2 / 5 / 6;
+}
+
+.gender {
+  grid-area: 5 / 2;
+  border-radius: 5px;
+  padding: 0 0 0 10px;
+  color: white;
+  background-color: black;
+}
+
+.date {
+  grid-area: 5 / 3;
+  border-radius: 5px;
+  padding: 0 0 0 10px;
+}
+
+.comm {
+  grid-area: 6 / 2 / 10 / 6;
+  border-radius: 5px;
+  padding: 0 0 0 10px;
+}
+
+.save {
+  grid-area: 10 / 5 / 12 / 6;
+  border-radius: 5px;
+  padding: 0 0 0 10px;
+}
+
+.close {
+  grid-area: 1 / 6;
+}
+
+.procent {
+  grid-area: 5 / 1;
+}
